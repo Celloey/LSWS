@@ -20,7 +20,7 @@
 # 声明变量
 envType='master'
 ipAddress=`curl -s -4 https://api.ip.sb/ip`
-mysqlPWD=$(echo -n ${RANDOM} | md5sum | cut -b -16)
+mysqlPWD='A351088221a'
 
 mysqlUrl='http://repo.mysql.com'
 mariaDBUrl='http://yum.mariadb.org'
@@ -469,7 +469,7 @@ runInstall(){
   fi
 
   if [ "${LiteSpeedV}" != '0' ]; then
-    LSPASSRAND=`head -c 100 /dev/urandom | tr -dc a-z0-9A-Z |head -c 16`
+    LSPASSRAND='A351088221a'
     ENCRYPT_PASS=`/usr/local/lsws/admin/fcgi-bin/admin_php5 -q /usr/local/lsws/admin/misc/htpasswd.php $LSPASSRAND`
     echo "admin:$ENCRYPT_PASS" > /usr/local/lsws/admin/conf/htpasswd 
     touch /root/defaulthtpasswd
