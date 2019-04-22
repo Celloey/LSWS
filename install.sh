@@ -29,7 +29,7 @@ LiteSpeedUrl='http://rpms.litespeedtech.com'
 mysqlUrl_CN='http://mirrors.ustc.edu.cn/mysql-repo'
 mariaDBUrl_CN='http://mirrors.ustc.edu.cn/mariadb/yum'
 phpUrl_CN='https://mirrors.ustc.edu.cn/remi'
-LiteSpeedUrl_CN='http://litespeed-rpm.mf8.biz'
+LiteSpeedUrl_CN='http://rpms.litespeedtech.com'
 isUpdate='0'
 
 # show success message
